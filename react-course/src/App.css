@@ -1,0 +1,65 @@
+body {
+  background: #86109b;
+  font-size: 20px;
+}
+
+.App-logo {
+  display: block;
+  margin: 0px auto 0px auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.addTodo {
+  width: 50%;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  
+}
+
+button {
+   position: relative;
+   background-color: blue;
+   border: none;
+   font-size: 28px;
+   color: #FFFFFF;
+   padding: 20px;
+   width: 200px;
+   text-align: center;
+   -webkit-transition-duration: 0.4s;
+   /* Safari */
+   transition-duration: 0.4s;
+   text-decoration: none;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+button::after {
+   content: "";
+   background: #90EE90;
+   display: block;
+   position: absolute;
+   padding-top: 300%;
+   padding-left: 350%;
+   margin-left: -20px !important;
+   margin-top: -120%;
+   opacity: 0;
+   transition: all 0.8s
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+ 
