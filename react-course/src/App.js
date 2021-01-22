@@ -56,7 +56,7 @@ class App extends React.Component{
               />
             
               <button 
-              disabled={!this.state.newItem.length}
+              // disabled={!this.state.newItem.length}
               className="addButton">Add Todo</button>
               <ul className="list-items">
               {this.state.list.map(item=>{

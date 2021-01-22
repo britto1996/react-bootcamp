@@ -75,7 +75,7 @@ body {
 
 
 .delete {
-  margin-left: 50px;
+  /* margin-left: 150px; */
   background-color: red;
   border-radius: 28px;
   border: 1px solid #18ab29;
